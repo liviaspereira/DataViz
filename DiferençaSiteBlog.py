@@ -1,3 +1,5 @@
+# O arquivo blog.csv contém as informações somente a partir da implantação do blog.
+
 from matplotlib import pyplot as plt 
 
 transacoes_blog = []
@@ -29,9 +31,10 @@ dias = list(range(1, len(transacoes_blog)+1))
 
 plt.plot(dias, diferençaTB, label='Diferença Transações Blog e Site')
 
-plt.title("DIAS X Diferença Transações Totais")
+plt.title("Dias X Diferença Transações do Blog")
 plt.legend()
 plt.xlabel("DIAS")
+plt.ylabel("Transações no Blog")
 plt.show()
 
 print(sum(diferençaTB)/len(diferençaTB))

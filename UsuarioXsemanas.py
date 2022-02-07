@@ -28,9 +28,9 @@ semanas = [str(i) for i in semanas]
 
 
 plt.plot(semanas, listamedia)
-plt.title("RELAÇÃO DE USUÁRIOS POR SEMANA")
+plt.title("Relação de Usuários do Blog por Semana")
 plt.xlabel("Semanas")
-plt.ylabel("Usuarios")
+plt.ylabel("Usuarios do Blog")
 plt.show()
 
     

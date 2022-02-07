@@ -1,5 +1,6 @@
+# O arquivo sozero.csv contém apenas dos dados de quando ainda não havia o blog e sem os outliers
+
 from matplotlib import pyplot as plt 
-from scipy.stats import pearsonr, spearmanr
 
 data = []
 transacoes_blog = []
@@ -13,7 +14,7 @@ usuarios_site = []
 receita = []
 
 
-f = open("blogsemcopy.csv", "r")
+f = open("sozero.csv", "r")
 lines = f.readlines()
 
 for line in lines:

@@ -1,3 +1,5 @@
+# O arquivo semoutlier.csv contém todas as informações com exceção dos outliers.
+
 from matplotlib import pyplot as plt 
 
 data = []
@@ -34,7 +36,7 @@ plt.plot(semanas, transacoes_site, label='Transacoes site')
 plt.plot(semanas, transacoes_blog, label='Transacoes blog')
 
 
-plt.title("DIAS X TRANSAÇÕES BLOG E SITE")
+plt.title("Relação de transações e Usuários do Blog por dia")
 plt.legend()
-plt.xlabel("DIAS")
+plt.xlabel("Dias")
 plt.show()
