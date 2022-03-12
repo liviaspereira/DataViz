@@ -117,10 +117,10 @@ def predicao(x,b):
     y_pred = b[0]+ x*b[1]
     return y_pred
 
-print(f"predição: {predicao(639,b)}")
+print(f"predição: {predicao(636,b)}")
 total_real = acumulado_receita_real[-1]
 print(f"total real: {total_real}")
 
-diferenca = abs(total_real - predicao(639,b))
+diferenca = abs(total_real - predicao(636,b))
 porcentagem = (diferenca/total_real)*100
 print(f"diferença: {diferenca}, porcentagem: {porcentagem}")

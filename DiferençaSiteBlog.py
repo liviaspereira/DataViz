@@ -8,7 +8,7 @@ transacoes_totais = []
 usuarios_blog = []
 
 
-f = open("blog.csv", "r")
+f = open("../blog.csv", "r")
 lines = f.readlines()
 
 for line in lines:
@@ -33,7 +33,7 @@ plt.plot(dias, diferençaTB, label='Diferença Transações Blog e Site')
 
 plt.title("Dias X Diferença Transações do Blog")
 plt.legend()
-plt.xlabel("DIAS")
+plt.xlabel("Dias")
 plt.ylabel("Transações no Blog")
 plt.show()
 

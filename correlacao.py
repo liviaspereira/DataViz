@@ -1,6 +1,7 @@
 # O arquivo sozero.csv contém apenas dos dados de quando ainda não havia o blog e sem os outliers
 
 from matplotlib import pyplot as plt 
+from scipy.stats import spearmanr
 
 data = []
 transacoes_blog = []
@@ -14,7 +15,7 @@ usuarios_site = []
 receita = []
 
 
-f = open("sozero.csv", "r")
+f = open("blog.csv", "r")
 lines = f.readlines()
 
 for line in lines:
@@ -49,5 +50,3 @@ plt.title("DIAS X acumulado_usuarios_site")
 plt.legend()
 plt.xlabel("DIAS")
 plt.show()
-
-
